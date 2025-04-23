@@ -25,3 +25,45 @@
   min height: 100%;
   z-index: -1;
 }
+
+.header-text {
+  display: flex;
+  justify-content: center;
+  padding: 11px;
+}
+
+.logga-in {
+  padding: 11px;
+  border: 1px;
+}
+
+.skapa-konto {
+  border: 1px dashed #514e4c;
+  padding: 11px;
+}
+
+label {
+  display: flex;
+  padding: 8px;
+  justify-content: center;
+}
+
+fieldset {
+  border: none;
+}
+
+form {
+  max-width: 350px;
+  margin: 0 auto;
+}
+
+input {
+  width: 100%;
+  font-size: 16px;
+  padding: 14px 0;
+  border-radius: 0%;
+}
+
+::placeholder {
+  padding: 14px;
+}
