@@ -11,15 +11,28 @@
 
 <body>
 
-  <div class="hero">
-    <h1>SOME TEXT</h1>
-    <video class="video-bg" autoplay muted loop>
-      <source src="hero-video.mp4" type="video/mp4">
-    </video>
-  </div>
+  <header>
+    <div class="hero">
 
-  <form>
-    <div class="header-text">
+      <video class="video-bg" autoplay muted loop>
+        <source src="hero-video.mp4" type="video/mp4">
+      </video>
+
+      <div class="header-text">
+        <h1>HEADER TEXT</h1>
+        <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet nesciunt asperiores qui consectetur possimus
+          a, optio, ipsum earum eos quaerat, maxime obcaecati explicabo sunt odit in excepturi fuga magnam nostrum.</h3>
+        <a href="#down">Skapa konto</a>
+      </div>
+
+      <div id="down">
+      </div>
+
+    </div>
+  </header>
+
+  <form action="http://httpbin.org/anything" method="POST">
+    <div class="form-header-text">
 
       <div class="logga-in">
         <h2>Logga in</h2>
@@ -33,20 +46,39 @@
 
     <fieldset>
       <label>
-        <input type="text" name="Name" placeholder="Namn">
+        <input class="style-input" type="text" name="Name" placeholder="Namn">
       </label>
 
       <label>
-        <input type="text" name="last-name" placeholder="Efternamn">
+        <input class="style-input" type="text" name="last-name" placeholder="Efternamn">
       </label>
 
       <label>
-        <input type="email" name="email" placeholder="E-post">
+        <input class="style-input" type="email" name="email" placeholder="E-post">
       </label>
 
       <label>
-        <input type="password" name="password" placeholder="•••••••••••">
+        <input class="style-input" type="password" name="password" placeholder="•••••••••••">
       </label>
+
+      <label class="nyhetsbrev">
+        <input type="checkbox" name="checkbox">
+        Ja jag vill prenumerera på nyhetsbrev
+      </label>
+
+      <!-- <label class="question-for-radiobutton">
+        What is your favorite pet?
+        <input type="radio" name="favorite-pet" value="Cats">Cats
+        <input type="radio" name="favorite-pet" value="Dogs">Dogs
+        <input type="radio" name="favorite-pet" value="Birds">Birds
+      </label> -->
+
+      <input type="radio" name="payment" id="card" checked="checked" />
+      <label class="radiobutton-label" for="card">Card</label>
+
+      <input type="radio" name="payment" id="swish" />
+      <label class="radiobutton-label" for="swish">Swish</label>
+
     </fieldset>
 
     <button type="submit">SKAPA KONTO</button>

@@ -16,6 +16,7 @@
   color: white;
 }
 
+
 .video-bg {
   position: absolute;
   top: 50%;
@@ -26,7 +27,7 @@
   z-index: -1;
 }
 
-.header-text {
+.form-header-text {
   display: flex;
   justify-content: center;
   padding: 11px;
@@ -59,7 +60,7 @@ form {
   margin: 0 auto;
 }
 
-input {
+.style-input {
   width: 100%;
   font-size: 16px;
   padding: 14px 0;
@@ -84,5 +85,97 @@ button {
   font-size: 16px;
   padding: 14.6px 16px;
   margin-top: 26px;
-  margin-bottom: 60px;
+  margin-bottom: 120px;
+  letter-spacing: 1px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  border: 1px dashed white;
+  padding: 11px;
+  font-size: larger;
+}
+
+#down {
+  margin-top: 50%;
+
+}
+
+.header-text h3 {
+  margin-bottom: 220px;
+  max-width: 525px;
+  font-size: 20px;
+}
+
+.header-text h1 {
+  margin-bottom: 28px;
+  letter-spacing: 2px;
+  font-size: 72px;
+}
+
+.nyhetsbrev {
+  display: flex;
+  justify-content: space-between;
+  font-family: Verdana;
+  color: #514e4c;
+  font-size: 16px;
+}
+
+input[type="checkbox"] {
+  font: inherit;
+  width: 1.30em;
+  height: 1.30em;
+  cursor: pointer;
+}
+
+/*.question-for-radiobutton {
+  display: block;
+}
+
+input[type="radio"] {
+  width: 100%;
+}*/
+
+input[type="radio"] {
+  display: none;
+}
+
+.radiobutton-label {
+  position: relative;
+  color: #514e4c;
+  font-family: Verdana;
+  cursor: pointer;
+  display: inline-flex;
+  gap: 0.8em;
+  align-items: center;
+  border: 3px solid #514e4c;
+  padding: 1em 2em;
+  border-radius: 0.5em;
+
+}
+
+.radiobutton-label:before {
+  content: "";
+  height: 2em;
+  width: 2em;
+  border: 3px solid #514e4c;
+  border-radius: 50%;
+}
+
+input[type="radio"]:checked+label:before {
+  height: 1em;
+  width: 1em;
+  border: 0.65em solid white;
+  background-color: #514e4c;
+}
+
+input[type="radio"]:checked+radiobutton-label {
+  background-color: #514e4c;
+  color: white;
 }
