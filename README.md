@@ -1,10 +1,5 @@
 # Business Site
 
-Replace this readme with your own information about the project. You can include things like:
+I this exercise the task was to create a business one-pager website that contains an image or video header and a signup form. The main focus was practising what I've learned about HTML forms.
 
-- Brief description of the assignment
-- How you approached the task, what tools and techniques you used, and how you planned it
-- If you had more time, what would be next?
-
-## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+Here is the link to the site: angelias-business-site.netlify.app
